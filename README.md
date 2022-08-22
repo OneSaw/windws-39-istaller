@@ -1,7 +1,7 @@
 # tutorial how to istaller
 - step 1 : press green button named code
 - step 2 : download zip
-- step 3 : extract to desktop
+- step 3 : extract
 - step 4 : enjoy windws 39 :)
 
 # how do i exit istaller?
