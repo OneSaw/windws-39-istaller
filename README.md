@@ -5,6 +5,7 @@
 - step 4 : enjoy windws 39 :)
 
 # how do i exit istaller?
+- intergrated method : press on screen and press esc key
 - method 1: alt + f4
 - method 2: restart pc
 - method 3: shift + ctrl + esc then locate istaller.exe and right click and end task
