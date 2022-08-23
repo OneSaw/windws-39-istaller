@@ -7,8 +7,7 @@ from io import BytesIO
 
 # declare the window
 win = Tk()
-###           https://cdn.discordapp.com/attachments/912359331817717841/1011667040781742090/image-removebg-preview_20.ico         ### 
-
+#icon stuff
 responseico = requests.get("https://cdn.discordapp.com/attachments/912359331817717841/1011668097826037790/image-removebg-preview_20.png")
 ico = Image.open(BytesIO(responseico.content))
 photo = ImageTk.PhotoImage(ico)
@@ -16,8 +15,7 @@ win.wm_iconphoto(True, photo)
 
 # set window title
 win.title("windws 39 udate")
-# set window width and height
-
+#idk why i added this
 user = os.getlogin()
 
 def create():
