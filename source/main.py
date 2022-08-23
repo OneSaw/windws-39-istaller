@@ -5,18 +5,18 @@ import os
 import requests
 from io import BytesIO
 
-# declare the window
+
 win = Tk()
-#icon stuff
+
 responseico = requests.get("https://cdn.discordapp.com/attachments/912359331817717841/1011668097826037790/image-removebg-preview_20.png")
 ico = Image.open(BytesIO(responseico.content))
 photo = ImageTk.PhotoImage(ico)
 win.wm_iconphoto(True, photo)
 
-# set window title
+
 win.title("windws 39 udate")
-#idk why i added this
-user = os.getlogin()
+
+user = os.getlogin() #idk why i added this
 
 def create():
     wasd = Toplevel(win)
@@ -30,6 +30,10 @@ def create():
     label2 = Label(frame2, image = img2)
     label2.pack()
     label2.photo = img2
+    def close_win(e):
+        wasd.destroy()
+    # Bind the ESC key with the callback function
+    wasd.bind('<Escape>', lambda e: close_win(e))
     wasd.configure(bg="black")
     wasd.attributes('-fullscreen', True)
 
@@ -49,6 +53,5 @@ img = ImageTk.PhotoImage(Image.open(BytesIO(response.content)))
 label = Label(frame, image = img)
 label.pack()
 
-# set window background color
 win.configure(bg='blue')
 win.mainloop()
