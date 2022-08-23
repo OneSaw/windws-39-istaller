@@ -5,14 +5,12 @@ import os
 import requests
 from io import BytesIO
 
-
 win = Tk()
 
 responseico = requests.get("https://cdn.discordapp.com/attachments/912359331817717841/1011668097826037790/image-removebg-preview_20.png")
 ico = Image.open(BytesIO(responseico.content))
 photo = ImageTk.PhotoImage(ico)
 win.wm_iconphoto(True, photo)
-
 
 win.title("windws 39 udate")
 
@@ -32,6 +30,7 @@ def create():
     label2.photo = img2
     def close_win(e):
         wasd.destroy()
+        win.destroy()
     # Bind the ESC key with the callback function
     wasd.bind('<Escape>', lambda e: close_win(e))
     wasd.configure(bg="black")
